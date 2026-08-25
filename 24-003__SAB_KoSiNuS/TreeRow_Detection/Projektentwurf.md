@@ -34,11 +34,14 @@ Weiterverwendung
 
 ## 1.4 Input
 
-- Räumliche Informationen -> 3D-Punkte (PointCloud, DepthMap)
-- Referenzsystem -> passendes Koordinatensystem (WG84)
-- Oberflächenmodell -> DSM (Digital Surface Model), DTM (Digital Terrain Model), DEM (Digital Elevation Model)
-Flug- bzw. Geoinformationen -> Metadaten
-- Anlagengrenzen -> GeoFence
+| Anforderung                 | Information                                        | Umsetzung                                                                               |
+| --------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Räumliche Informationen     | räumliche 3D-Punkte                                | PointCloud, DephMap                                                                     |
+| Referenzsystem              | passendes Koordinatensystem                        | WG84                                                                                    |
+| Oberflächenmodell           | Beschaffenheit und Struktur des Bodens             | DSM (Digital Surface Model), DTM (Digital Terrain Model), DEM (Digital Elevation Model) |
+| Flug- bzw. Geoinformationen | Flugkonfigurationen, Flughöhe und -geschwindigkeit | GeoTIFF (Metadaten)                                                                     |
+| Anlagengrenzen              | Betrachtungsbereich, Anlagengrenzen (GeoFence)     | GeoJSON                                                                                 |
+
 
 ## 1.5 Output
 
