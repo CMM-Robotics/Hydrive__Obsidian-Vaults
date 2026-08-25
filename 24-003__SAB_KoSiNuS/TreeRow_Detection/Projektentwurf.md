@@ -22,10 +22,10 @@ Benutzer
 → Entwickler / Ingenieur
 
 Software
-→ verarbeitet Messdaten
+→ Verarbeitung der Messdaten
 
 Ergebnis
-→ Anlagen-/Umgebungsmodell
+→ vereinfachtes Anlagen-/Umgebungsmodell
 
 Weiterverwendung
 → autonome Navigation / Planung / Visualisierung /
@@ -42,9 +42,32 @@ Weiterverwendung
 | Flug- bzw. Geoinformationen | Flugkonfigurationen, Flughöhe und -geschwindigkeit | GeoTIFF (Metadaten)                                                                     |
 | Anlagengrenzen              | Betrachtungsbereich, Anlagengrenzen (GeoFence)     | GeoJSON                                                                                 |
 
-
 ## 1.5 Output
 
+- Klassifizierungen von:
+	- Stamm
+	- Blätterdach
+- Pflanzenreihe
+- Hindernisse
+- Boden
+
+alle Pflanzenreihen werden als Vektor im folgenden Format gespeichert
+=> DXF (Drawing Exchange Format)
+=> DWF (Drawing Format)
 ## 1.6 Funktionale Anforderungen
 
+- A-01: die Input-Daten werden korrekt eingelesen und verarbeitet
+- A-02: alle relevanten Datenpunkte sollen aus dem Rohdatensatz ausgefiltert werden
+- A-03: der ganzheitliche Boden soll richtig erkannt und abgegrenzt werden (Ground-Segmentation)
+- A-04: die Pflanzenreihen sollen richtig erfasst, und als Polyline vereinfacht werden
+- A-05: es soll bestenfalls jede einzelne Pflanze korrekt erfasst werden (wenn möglich als einzelnes Individuum/Objekt)
+	- korrekte Erfassung der Pflanze und ihrer strukturellen Einteilung (Blätterdach, Stammansatz)
+- A-06: restliche nicht klassifizierte Objekte oberhalb vom Boden sollen vorerst als "Hindernisse" gelabelt werden
+- A-07: die Verarbeitungs-Pipeline soll parametrisierbar, konfigurierbar und nach Funktionalität einstellbar sein
+- A-08: die Ausgabe soll als Drawing-Format oder allgemein CAD-taugliches Format erfolgen
+- A-09: alle Feldbestandteile müssen korrekten Bezug zum Referenzsystem haben (richtiges Koordinatensystem --> Kartenprojektion)
 ## 1.7 Nichtfunktionale Anforderungen
+
+- NA-01: kein vollständiges, hochauflösendes Pflanzenmodell rekonstruieren --> mindestens ein Primitive Model
+- NA-02: keine hochgenaues Polyline für die Pflanzreihe bzw. dessen Verlauf
+- 
