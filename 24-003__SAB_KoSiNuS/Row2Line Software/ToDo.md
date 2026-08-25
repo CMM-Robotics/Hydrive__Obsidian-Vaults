@@ -1,0 +1,32 @@
+- [ ] Klassen optimieren
+	- [x] class Tree_Row() soll von class Line() erben --> alles im Code anpassen
+	- [x] class Zone() soll von class Polygon() erben
+	- [x] self.values: tuple(float) von class Point() integrieren und nutzen statt Einzelaufruf von .x und .y
+	- [x] class Point() longitude und latitude ersetzen durch x und y
+	- [x] class Zone() soll bei den offenen Seiten die Line der class Driving_Range() besitzen
+	- [x] class Path_Zone() soll bei den offenen Seiten zusätzlich die Transit_Region() mit den eigenen Path_points besitzen
+	- [ ] gegenüberliegende Path_Points innerhalb der Path_Zone sollen abhängig sein
+	- [ ] jede gültige Feld Komponente soll sich die Feld- bzw. die section-id von seinen parent_objects holen
+---
+- [ ] Plot-Ausgabe bearbeiten
+	- [ ] optimierte Headland_Zonen als simples Rechteck --> soll zwischen Geo_Fence und Path_zone liegen
+		- [ ] anliegende Driving_Ranges müssen mit den Mindest_Bereichen gemerget werden 
+	- [ ] alles Relevante Plotten lassen --> auch text und farbe konfigurierbar, sowie das anzeigen des textes
+---
+- [ ] Software optimieren
+	- [ ] Methode ray_segment_intersection() optimieren
+	- [ ] Code kommentieren, dokumentieren, und ordnen
+	- [ ] Software zu PlugIn Framework umwandeln
+	- [ ] start und end vereinheitlichen und zusammenführen --> point_set als Bedingung nutzen
+		- [ ] IDs für die einzelne Bestandteile richtig setzen --> alle Hilfsobjekte sollen id=None erhalten --> alle IDs sollen den Erzeugungsursprung zeigen für Trouble-Shooting
+	- [ ] Variablen-Bezeichnungen verbessern --> einheitliche, globale und verständliche Abkürzungen
+	- [ ] get- und set- methoden einbauen
+	- [x] shift_vektoren anfangs berechnen und überall nutzbar machen
+	- [ ] Fehler- bzw. Loggingausgaben integrieren
+---
+- [ ] Zielführende und wichtige Integration
+	- [ ] Driving_Region in alle Polygone und Zonen integrieren --> insbesondere Path_Zone
+---
+- [ ]  DrawIo Dokumentation
+		- [ ] Klassendiagramm aktualisieren und ergänzen
+	- [ ] Konzeptplan ergänzen und ausfüllen

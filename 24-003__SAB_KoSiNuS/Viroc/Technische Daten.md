@@ -1,0 +1,39 @@
+- Leistung: 55,4 kw (75 PS) --> Diesel-Motor
+- Gewicht:
+	- 1270 kg
+	- Vorderer Teil im perfekten Gleichgewicht
+		- zentrale Anordnung des Motors und der Hydraulik
+		- Fahrerkabine genau über Radmittelpunkt
+	- Hinterer Teil im perfekten Gleichgewicht 
+		- Anbringung der Zusatzmodule genau über dem Radmittelpunkt
+- Mittelgelenk:
+	- Lenkwinkel: +- 82°
+	- doppeltes Pendelgelenk --> Verwindungswinkel: 35°
+	- Bodenfreiheit: 15,2 cm
+	-  kaum Druck auf Mittelgelenk, durch optimale Gewichtsverteilung der beiden Fahrzeugglieder
+- Hydraulik-Pumpen:
+	- bis zu 7 getrennte Hydraulikpumpen
+	- Antrieb: 2 Verstellkolbenpumpe für die rechten und linken Räder
+	- Zapfwelle: 1 hydraulische Verstellkolbenpumpe mit bis zu 40 l/min bei max. 250 bar
+	- Lenkung: 1 hydraulische Zahnradpumpe mit 19 l/min bei 180 bar
+	- Arbeitsbetrieb: 1 hydraulische Zahnradpumpe mit 13,5 l/min bei 180 bar
+- Zugkraft: 
+	- Standard-Modell: 20 km/h --> 13300 N
+	- High-Torque-Modell: 14 km/h --> 20000 N
+- Fahrwerk:
+	- Bodenabstand (je nach Modell):
+		- Standard: 150 - 175 mm
+		- High Lift: 215 - 240 mm
+		- zusätzliche Anhebung um bis zu 65 mm für urbarneres Gelände
+	- Tiefer Schwerpunkt --> Fahrerkabine in Leichtbauweise
+- Fahrantrieb:
+	- Unterschiedliche Bereifung --> haben Auswirkungen auf die Gerätebreite
+	- Einzelradüberwachung --> löst Pendelgelenksperre aus, wenn ein Rad den Bodenkontakt verliert
+	- Differenzialsperre zur Überwindung unebenen Geländes 
+
+#### Zusätzliche Informationen:
+
+- CAN-BUS System
+- Straßenzulassung vorhanden
+- 180° drehbare Kabine
+- Modulare Aufsätze für bestimmte Aufgabenbereiche
