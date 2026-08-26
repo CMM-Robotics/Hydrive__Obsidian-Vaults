@@ -140,7 +140,10 @@ Bestehende Schnittstellen
 - die Ergebnisse werden in das richtige Datenformat konvertiert
 
 ## 1.11 Offene Fragen
+
 - welchen Einfluss hat Licht auf die Ergebnisse
 - kann die Zuverlässigkeit der Detektion verbessert werden
-	- Validierung der potentiellen Pflanzenreihe mit einer Hyperplane einer bestimmten Schräge in bestimmten Abschnitten/Abständen
-- welche Datentypen sind in den jeweiligen Zwischenschritten der Pipeline am erfolgsversprechendsten
+	- durch Validierung der potentiellen Pflanzenreihe mit einer Hyperplane einer bestimmten Schräge in bestimmten Abschnitten/Abständen
+- welche Datentypen sind in den jeweiligen Zwischenschritten der Pipeline am zuverlässigsten
+- lassen sich auch andere Feldobjekte klassifizieren (Zaun -> GeoFence; 3D-Punkt-Blob -> Hindernis)
+- welche Genauigkeit bzw. Grundvoraussetzungen sind für den Erfolg der zuverlässigen De nötig 
