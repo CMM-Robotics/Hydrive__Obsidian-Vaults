@@ -96,13 +96,51 @@ Ausgangs-Datenformate:
 
 Bestehende Schnittstellen
 ```text
-GeoTiff
-	↓
-WebODM
-	↓
+
+	↓    Abflugmuster, Flugkonfigurationen
+---------------------
+|   DJI Mavic 3M    |
+---------------------
+
+	↓    Bilder mit geoinformation: GeoTIFF
+	
+---------------------	
+|      WebODM       |
+---------------------
+
+	↓    DepthMap:        DEM (Digital Elevation Model)
+	↓    PointCloud:      LAS/LAZ, PCD
+	
+---------------------	
+| TreeRow-Detector  |
+---------------------
+
+	↓    CAD-File:        DWF (DrawingFormat)
+	
+---------------------	
+|     Row2Line      |
+---------------------
+
+	↓    Feldobjekte:     GeoJSON
+	↓    Anlagenplan (CAD-ähnlich):     DWF (DrawingFormat)
 	
 ```
+
 ## 1.10 Erfolgskriterien
 
-## 1.11 Offene Fragen
+- alle Pflanzenreihen und ihr Verlauf werden richtig detektiert
+- die äußersten Bäume werden richtig als Randpunkte der Pflanzenreihe erkannt
+- der Boden wird richtig und vollständig erkannt
+- die Rohpunktwolke wird auf die relevantesten Punkte ausgefiltert
+	- alle störenden, fehlerhaften und unrelevanten Datenpunkte werden entfernt oder unschädlich gemacht
+- die Planze wird richtig erkannt
+	- Stammansatz
+	- Blattansatz
+- richtig gefilterte Punktwolke nur mit dem "Blattansatz"
+- die Ergebnisse werden in das richtige Datenformat konvertiert
 
+## 1.11 Offene Fragen
+- welchen Einfluss hat Licht auf die Ergebnisse
+- kann die Zuverlässigkeit der Detektion verbessert werden
+	- Validierung der potentiellen Pflanzenreihe mit einer Hyperplane einer bestimmten Schräge in bestimmten Abschnitten/Abständen
+- welche Datentypen sind in den jeweiligen Zwischenschritten der Pipeline am erfolgsversprechendsten
