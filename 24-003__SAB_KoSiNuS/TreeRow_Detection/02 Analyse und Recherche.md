@@ -22,18 +22,71 @@
 
 # 2.2 nötige Verarbeitungsschritte
 
-1. nutzbare Drohnenbilder aufnehmen
-2. Punktwolke mittels Photogrammetrie erzeugen
-3. Boden klassifizieren und entfernen
-4. restliche Punktwolke nach Pflanzen bzw. Pflanzenreihen klassifizieren
-5. (einzelnen Pflanzen einen Schwerpunkt berechnen -> möglicher Stammansatz)
-6. alle Pflanzen in einer Reihe detektieren
-7. Pflanzenreihen validieren und belegen, mittels horizontaler/vertikaler Schnitte in die Reihe
-8. Eckpunkte der Pflanzenreihe erfassen
-9. Polyline den Eckpunkten entlang führen
-10. Polylines im richtigen Format ausgeben
+1. Geeignete Eingangsdaten aufnehmen
+2. Punktwolke anhand der Aufnahmen erzeugen
+3. Punktwolke für die Analyse aufbereiten
+4. Bodenpunkte von den restlichen Punkten trennen
+5. neuen Betrachtungsbereich (Vegetationsbereich) der Punktwolke erzeugen
+6. einzelne Pflanzenstrukturen erfassen und segmentieren
+7. einzelne Pflanzencluster klassifizieren
+8. Repräsentativpunkt/-geometrie der Pflanzencluster bestimmen
+9. alle Repräsentanten in einer Reihe erfassen -> Reihenkandidaten
+10. alle Reihenkandidaten anhand von Kriterien validieren
+11. Reihenkandidaten klassifizieren
+12. Reihenverlauf geometrisch abstrahieren
+13. die gesamten Punkte aller Polylines werden in ein Datenformat gepackt
 
 # 2.3 Verfahren und Algorithmen recherchieren
+
+## 2.3.1 Datenerfassung
+"Geeignete Eingangsdaten aufnehmen"
+
+## 2.3.2 Punktwolkengenerierung
+"Punktwolke anhand der Aufnahmen erzeugen"
+
+## 2.3.3 Punktwolkenaufbereitung
+"Punktwolke für die Analyse aufbereiten"
+
+## 2.3.4 Bodenmodellierung und -segmentierung
+"Bodenpunkte von den restlichen Punkten trennen"
+
+## 2.3.5 Punktwolkenverarbeitung
+"neuen Betrachtungsbereich (Vegetationsbereich) der Punktwolke erzeugen"
+
+## 2.3.6 Segmentierung bzw. Clustering
+"einzelne Pflanzenstrukturen erfassen und segmentieren"
+
+## 2.3.7 Clusterklassifizierung
+"einzelne Pflanzencluster klassifizieren"
+
+## 2.3.8 Clusterrepräsentation
+"Repräsentativpunkt/-geometrie der Pflanzencluster bestimmen"
+
+## 2.3.9 Reihenkandidatenerkennung
+"alle Repräsentanten in einer Reihe erfassen -> Reihenkandidaten"
+
+## 2.3.10 Reihenkandidatenvalidierung
+"alle Reihenkandidaten anhand von Kriterien validieren"
+
+## 2.3.11 Reihenklassifikation
+"Reihenkandidaten klassifizieren"
+
+## 2.3.12 Modellabstraktion
+"Reihenverlauf geometrisch abstrahieren"
+
+## 2.3.13 Datenexportierung
+"die gesamten Punkte aller Polylines werden in ein Datenformat gepackt"
+
+
+
+
+
+
+
+
+
+
+
 
 | Verarbeitungsschritt     | Bezeichnung                              | Algorithmen & Verfahren                                |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------ |
@@ -58,3 +111,8 @@ CloudCompare
 
 Nützliche Systeme:
 MeshLab: bearbeiten von Meshes
+
+
+Sehr geehrtes NeurobitesTeam,
+
+bei der Abwicklung des Kaufes ist ein Fehler passiert, und es soll keine weitere monatliche Lieferung sowie Abbuchung erfolgen. Dazu ist es total unübersichtlich, wo man eine Kündigung bei euch selber abwickeln kann, deshalb bitte ich euch das für mich zu erledigen
