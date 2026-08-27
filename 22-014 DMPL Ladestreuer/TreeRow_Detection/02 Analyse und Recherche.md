@@ -44,7 +44,7 @@
 Als Eingangsdaten sollen Flugbilder der jeweiligen Anlage dienen.
 Für die Datenerfassung wird folgende Drohne genutzt: **DJI Mavic 3M**
 
-Folgende Flugbedingungen sind zu beachten:
+Für die Aufnahme der Anlage Pillnitz wurden folgende Flugkonfigurationen gewählt:
 1. Überlappung
 	1. Front: 90
 	2. Side: 80
@@ -53,11 +53,21 @@ Folgende Flugbedingungen sind zu beachten:
 4. Auflösung: 1,38 cm/pixel
 5. Course Angle: 40°
 
-Das Abflugmuster sieht Folgendermaßen aus:
+Das Abflugmuster sieht folgendermaßen aus:
 
 
 ## 2.3.2 Punktwolkengenerierung
 "Punktwolke anhand der Aufnahmen erzeugen"
+
+Um aus den Serienbildern der Anlage räumliche Datenpunkte zu erhalten, wird die Photogrammmetrie mit WebODM angewendet.
+
+Für die Generierung werden folgende Konfigurationen:
+
+
+|     | RGB | Multispectral |
+| --- | --- | ------------- |
+|     |     |               |
+
 
 ## 2.3.3 Punktwolkenaufbereitung
 "Punktwolke für die Analyse aufbereiten"
