@@ -1,6 +1,6 @@
 ## 2.1 Input analysieren
 
-![[Pasted image 20260826113414.png|387]]
+![[DSM-Vergleichsbilder.png|387]]
 
 ### relevante Kartenbausteine
 
@@ -41,6 +41,21 @@
 ## 2.3.1 Datenerfassung
 "Geeignete Eingangsdaten aufnehmen"
 
+Als Eingangsdaten sollen Flugbilder der jeweiligen Anlage dienen.
+Für die Datenerfassung wird folgende Drohne genutzt: **DJI Mavic 3M**
+
+Folgende Flugbedingungen sind zu beachten:
+1. Überlappung
+	1. Front: 90
+	2. Side: 80
+2. Geschwindigkeit: 1,3 m/s
+3. Höhe: 30 m
+4. Auflösung: 1,38 cm/pixel
+5. Course Angle: 40°
+
+Das Abflugmuster sieht Folgendermaßen aus:
+
+
 ## 2.3.2 Punktwolkengenerierung
 "Punktwolke anhand der Aufnahmen erzeugen"
 
@@ -77,25 +92,6 @@
 ## 2.3.13 Datenexportierung
 "die gesamten Punkte aller Polylines werden in ein Datenformat gepackt"
 
-
-
-
-
-
-
-
-
-
-
-
-| Verarbeitungsschritt     | Bezeichnung                              | Algorithmen & Verfahren                                |
-| ------------------------ | ---------------------------------------- | ------------------------------------------------------ |
-| Punktwolke vorbereiten   | Reduzierung/Vereinfachung                | Voxel Downsampling, Cropping mit Hyperplane            |
-|                          | Filterung                                | Statistical Outlier Removal, Radius Outlier Removal    |
-| Feldkomponenten erfassen | Segmentierung vom Boden                  | Groundsegmentation                                     |
-|                          | Erkennung aller Pflanzen                 | KI-Modelle, DBSCAN, RANSAC, Clustering                 |
-|                          | Klassifizierung der Pflanzenteile        | KI-Modelle, Bilderkennung, Hilfsschnitt mit Hyperplane |
-| Pflanzenreihen berechnen | Linien-Detection der Points of Interests |                                                        |
 
 # 2.4 Bibliotheken recherchieren
 

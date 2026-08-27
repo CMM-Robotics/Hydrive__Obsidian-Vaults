@@ -108,7 +108,7 @@ Bestehende Schnittstellen
 |      WebODM       |
 ---------------------
 
-	↓    DepthMap:        DEM (Digital Elevation Model)
+	↓    DepthMap:        DSM (Digital Surface Model)
 	↓    PointCloud:      LAS/LAZ, PCD
 	
 ---------------------	
