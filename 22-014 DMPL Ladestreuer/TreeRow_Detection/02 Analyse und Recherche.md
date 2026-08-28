@@ -144,6 +144,8 @@ Folgende Verfahrensschritte sind nötig:
 ### V2: Betrachtungsbereich einstellen
 
 #### Manuelles Eingrenzen des Bereiches (Cropping)
+
+Mit WebODM
 ### V3: Störfaktoren entfernen
 
 #### Statistical Outlier Removal
@@ -169,14 +171,11 @@ Da alle Bodenpunkte allgemein auf einem bestimmten horizontalen Höhenbereich zu
 
 ![[Pillnitz-dsm_without_shattering 1.png|272]]
 
-Durch geschicktes Einstellen der Höhengrenzen bei der Farbverteilung, können höhengleiche Bodenpunkte farblich stark homogenisiert werden, wobei der Unterschied zu den darüberliegenden relevanten Punkten stark differenziert sind.
+Durch geschicktes Einstellen der Höhengrenzen bei der Farbverteilung, können höhengleiche Bodenpunkte farblich homogenisiert werden, wobei die Unterschiede zu den darüberliegenden relevanten Punkten stark differenzierbar sind.
 
-Um alle Bodenpunkte von der Punktwolke zu trennen, wird das das DSM im Dateiformat **GeoTIFF (RGB)** benötigt. Da die Farbwerte, wie auch der dahinter liegende Georeferenzpunkt, zu jedem Punkt für die Segmentierung essentiell sind.
-
+Um alle Bodenpunkte von der Punktwolke zu trennen, wird das das DSM im Dateiformat **GeoTIFF (RGB)** benötigt, da die Farbwerte, wie auch der dazugehörige Georeferenzpunkt, zu jedem Punkt für die Segmentierung essentiell sind. Mit **Color-Masking** können alle Bereiche mit Bodenpunkten entfernt werden, indem das dafür repräsentative Farbspektrum gewählt wird. Alle erhaltenen Bereiche dienen als *Regions of Interests* und können mithilfe der GeoDaten genau auf die Rohdatenwolke projiziert werden. Diese Bereiche 
 
 ### V2: Störfaktoren entfernen
-
-
 
 ## 2.3.5 Punktwolkenverarbeitung
 "neuen Betrachtungsbereich (Vegetationsbereich) der Punktwolke erzeugen"

@@ -33,13 +33,13 @@ Weiterverwendung
 
 -> Drohnenbilder (RGB + NIR)
 
-| Anforderung                 | Information                                        | Umsetzung                                                                                   |
-| --------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Räumliche Informationen     | räumliche 3D-Punkte                                | PointCloud                                                                                  |
-| Referenzsystem              | passendes Koordinatensystem                        | WG84                                                                                        |
-| Oberflächenmodell           | Beschaffenheit und Struktur des Bodens             | DEM (Digital Elevation Model): -->DSM (Digital Surface Model), DTM (Digital Terrain Model), |
-| Flug- bzw. Geoinformationen | Flugkonfigurationen, Flughöhe und -geschwindigkeit | GeoTIFF (Metadaten)                                                                         |
-| Anlagengrenzen              | Betrachtungsbereich, Anlagengrenzen (GeoFence)     | GeoJSON                                                                                     |
+| Anforderung                 | Information                                        | Umsetzung                                                                                    |
+| --------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Räumliche Informationen     | räumliche 3D-Punkte                                | PointCloud                                                                                   |
+| Referenzsystem              | passendes Koordinatensystem                        | WGS84                                                                                        |
+| Oberflächenmodell           | Beschaffenheit und Struktur des Bodens             | DSM (Digital Surface Model): --> DEM (Digital Elevation Model), DTM (Digital Terrain Model), |
+| Flug- bzw. Geoinformationen | Flugkonfigurationen, Flughöhe und -geschwindigkeit | GeoTIFF (Metadaten)                                                                          |
+| Anlagengrenzen              | Betrachtungsbereich, Anlagengrenzen (GeoFence)     | GeoJSON                                                                                      |
 
 ## 1.5 Output
 
@@ -65,6 +65,7 @@ alle Pflanzenreihen werden als Vektor im folgenden Format gespeichert
 - FA-07: die Verarbeitungs-Pipeline soll parametrisierbar, konfigurierbar und nach Funktionalität einstellbar sein
 - FA-08: die Ausgabe soll als Drawing-Format oder allgemein CAD-taugliches Format erfolgen
 - FA-09: alle Feldbestandteile müssen korrekten Bezug zum Referenzsystem haben (richtiges Koordinatensystem --> Kartenprojektion)
+---
 
 Zu vermeiden ist:
 - 01: kein vollständiges, hochauflösendes Pflanzenmodell rekonstruieren --> mindestens ein Primitive Model
@@ -74,7 +75,7 @@ Zu vermeiden ist:
 - Modularität: die Pipeline soll um weitere Algorithmen ergänzbar und konfigurierbar sein
 - Konfigurierbarkeit: es sollen Parameter für die Zuverlässigkeit und Genauigkeit der Endresultate einstellbar sein
 - Nachvollziehbarkeit: Statusmeldungen sollen nach jedem Bearbeitungsprozess ausgegeben werden
-- Erweiterbarkeit: die Pipeline soll um zusätzliche Software erweiterbar sein, wie der Software zur Anlagenrekonstruktion **Row2Line**
+- Erweiterbarkeit: die Pipeline soll um zusätzliche Software erweiterbar sein, wie der Software zur Anlagenrekonstruktion **Row2Plan**
 
 ## 1.8. Scope
 
@@ -87,7 +88,7 @@ Zu vermeiden ist:
 ## 1.9 Randbedingungen
 
 Programmiersprache:
-- Python, C++
+- Python (C++)
 
 Ausgangs-Datenformate:
 - GeoTIFF-Bilder
@@ -115,7 +116,7 @@ Bestehende Schnittstellen
 | TreeRow-Detector  |
 ---------------------
 
-	↓    CAD-File:        DWF (DrawingFormat)
+	↓    ''':        DWF (DrawingFormat)
 	
 ---------------------	
 |     Row2Line      |
@@ -146,4 +147,4 @@ Bestehende Schnittstellen
 	- durch Validierung der potentiellen Pflanzenreihe mit einer Hyperplane einer bestimmten Schräge in bestimmten Abschnitten/Abständen
 - welche Datentypen sind in den jeweiligen Zwischenschritten der Pipeline am zuverlässigsten
 - lassen sich auch andere Feldobjekte klassifizieren (Zaun -> GeoFence; 3D-Punkt-Blob -> Hindernis)
-- welche Genauigkeit bzw. Grundvoraussetzungen sind für den Erfolg der zuverlässigen De nötig 
+- welche Genauigkeit bzw. Grundvoraussetzungen sind für den Erfolg der zuverlässigen Detektion nötig 
